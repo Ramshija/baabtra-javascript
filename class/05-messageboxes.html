@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>message box</h1>
+
+    <button onclick="alertFunction()">show alert</button>
+    <button onclick="confirmFunction()">confirm</button>
+    <button onclick="promptFunction()">click here</button> 
+   <button onclick="userDetails()">user data</button> 
+    <script>
+function alertFunction(){
+    alert("This is an alert");
+}
+function confirmFunction(){
+    confirm("are you sure to delete it?");
+}   
+function promptFunction(){
+    prompt("enter a message","Hello world");
+}
+function userDetails(){
+    name = prompt("enter a username");
+    age = prompt("enter age");
+    place = prompt("enter city");
+
+document.write(name + '<br>');
+document.write(age + '<br>');
+document.write(place +'<br>');
+document.write("<h1>" + name + "</h1>");
+document.write("<h1>" + age + "</h1>");
+document.write("<h1>" + place + "</h1>");
+
+    console.log(name);
+    console.log(age);
+    console.log(place);
+}
+ </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>function</h1>
+    <button onclick="add(a, b)">add numbers</button>
+    <script>
+        a = 10;
+        b = 20;
+        sum = a + b;
+        console.log(sum);
+        a = 40;
+        b = 30;
+        sum = a + b;
+        console.log(sum);
+
+        // function functionName(parameter1, parameter2,....){
+        //     code to be
+        // }
+        // function invocation or function call
+        // functionName()
+        // function great() {
+        //  console.log("hello good evening !");   
+        // }
+        // great()
+        function great(name, age) {
+            console.log(`hello ${name} good evening ! age is ${age}`);
+        }
+        great("ziya", 12)
+        function add(num1, num2) {
+            a = Number( prompt("Enter number1"));
+         b = Number( prompt("Enter number2"));
+            sum = a+b;
+            console.log(`${a} +${b} = ${sum}`);
+        }
+        // add(2, 3)
+        // a = Number( prompt("Enter number1"));
+        // b = Number( prompt("Enter number2"));
+        // add(a, b);
+    </script>
+</body>
+
+</html>

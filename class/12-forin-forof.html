@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forin and forof</title>
+</head>
+
+<body>
+    <h1>for..in & for..of loops</h1>
+    <script>
+        // student = {
+        //     name: 'ramshi',
+        //     class: 10,
+        //     school: 'royal',
+        //     age: 18
+        // }
+        // console.log(student['name']);
+        // console.log(student.class);
+        // console.log(student.'class');
+
+        // for(property in student){
+        //     console.log(`${property} is ${student[property]}`)
+        // }
+
+
+        students = {
+            student1: { name: 'ramshi', age: 18 },
+            student2: { name: 'liba', age: 17 },
+            student3: { name: 'ziya', age: 16 }
+        }
+
+        console.log(students['student1']);
+        console.log(students.student2);
+
+        for (studentkey in students) {
+
+            console.log(`${studentkey}`)
+            student = students[studentkey]
+            console.log(`name: ${student.name}`);
+            console.log(`age: ${student.age}`);
+        }
+
+        fruits = ['apple', 'orange', 'grapes', 'pappaya']
+        for(fruit of fruits){
+            console.log(fruit);
+        }
+    </script>
+</body>
+
+</html>
